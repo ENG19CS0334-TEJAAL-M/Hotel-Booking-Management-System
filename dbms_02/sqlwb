@@ -1,0 +1,68 @@
+#create database Company;
+use company;
+create table Employee(EMP_NO varchar(30), EMP_FIRSTNAME varchar(30), EMP_LASTNAME varchar(30), DEPT varchar(50), SALARY int, DOJ date, BRANCH varchar(50), Age int, Dept_id varchar(10), Reports_To varchar(10));
+insert into Employee values('E101', 'Amit', 'Kumar', 'Sales', 34000, '2001-03-13', 'Bangalore', 28, 'D001', 'E112');
+insert into Employee values('E102', 'Rahul', 'S', 'Production', 45000, '2003-06-27', 'Bangalore', 32, 'D002', 'E106');
+insert into Employee values('E103', 'Manasa', 'Patil', 'Finance', 30000, '2004-07-17', 'Mumbai', 30, 'D003', 'E105');
+insert into Employee values('E105', 'Amit', 'Shetty', 'HR', 40000, '2003-05-18', 'Mangalore', 31, 'D004', 'Null');
+insert into Employee values('E106', 'Manasa', 'K', 'Production', 46000, '2002-09-26', 'Pune', 34, 'D002', 'Null');
+insert into Employee values('E107', 'Gaurav', 'R', 'Marketing', 38000, '2005-08-10', 'Mangalore', 27, 'D005', 'Null');
+insert into Employee values('E108', 'Chaitra', 'M', 'Finance', 32000, '2004-08-19', 'Mumbai', 26, 'D003', 'E105');
+insert into Employee values('E109', 'Divya', 'Sharma', 'HR', 38000, '2002-03-07', 'Pune', 29, 'D004', 'E105');
+insert into Employee values('E110', 'Karthik', 'Rao', 'Production', 43000, '2003-05-08', 'Bangalore', 31, 'D002', 'E106');
+insert into Employee values('E111', 'Pavan', 'T', 'Sales', 36000, '2004-11-01', 'Bangalore', 33, 'D001', 'E112');
+insert into Employee values('E112', 'Suhas', 'P', 'Sales', 37000, '2005-12-17', 'Bangalore', 35, 'D001', 'Null');
+
+SELECT * FROM Employee;
+SELECT Dept_id, AVG(SALARY)
+FROM Employee
+GROUP BY Dept_id;
+
+SELECT COUNT(EMP_NO)
+FROM Employee
+WHERE salary >=40000;
+
+ALTER TABLE Employee
+ADD Designation varchar(50);
+
+ALTER TABLE Employee change DOJ DateofJoining [date];
+
+ALTER TABLE Employee
+DROP COLUMN Age;
+
+ALTER TABLE Employee
+MODIFY COLUMN BRANCH varchar(25);
+
+ALTER TABLE Employee
+ADD CONSTRAINT UNIQUE (EMP_NO,Dept_id);
+
+SELECT BRANCH FROM Employee WHERE BRANCH = "Bangalore";
+
+CREATE VIEW Emp AS
+SELECT EMP_NO,Dept_id,SALARY
+FROM Employee;
+SELECT* FROM Emp
+
+select dept_id, sum(SALARY) AS "total salary"
+from employee
+group by DEPT
+having sum(salary) > 100000
+order by dept_id desc;
+
+SELECT DEPT_ID, count(*) as "number_of_employees"
+FROM employee
+WHERE SALARY > 33500
+GROUP BY DEPT
+HAVING COUNT(EMP_NO) =3
+ORDER BY EMP_NO ASC;
+
+SELECT E.EMP_FIRSTNAME, E.EMP_LASTNAME ,S.EMP_FIRSTNAME manager_fname ,S.EMP_LASTNAME manager_lname
+ FROM employee E 
+   JOIN employee S 
+     ON E.Reports_To= S.EMP_NO;
+     
+SELECT DEPT_ID, count(*) as "number_of_employees"
+FROM employee
+WHERE SALARY > 33000
+GROUP BY DEPT
+HAVING COUNT(EMP_NO) =2;
