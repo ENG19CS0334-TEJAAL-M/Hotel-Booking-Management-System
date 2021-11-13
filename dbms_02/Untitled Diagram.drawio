@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-13T04:41:37.250Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="GC6snq_rNjh4bQYJjp8L" version="15.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-13T04:43:57.181Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="lOvW_PmxAmq07f8HBbYB" version="15.7.3" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="2403" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#F1FAEE" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="3050" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#F1FAEE" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -153,9 +153,6 @@
         </mxCell>
         <mxCell id="tLfT9vOAS1rbt2APkhs6-98" value="&lt;u&gt;username&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontSize=18;fontColor=#1D3557;fontStyle=1;rounded=0;fillColor=#A8DADC;strokeColor=#457B9D;" parent="1" vertex="1">
           <mxGeometry x="960" y="375" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="tLfT9vOAS1rbt2APkhs6-99" value="password" style="ellipse;whiteSpace=wrap;html=1;align=center;fontSize=18;fontStyle=5;fontColor=#1D3557;rounded=0;fillColor=#A8DADC;strokeColor=#457B9D;" parent="1" vertex="1">
-          <mxGeometry x="970" y="425" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="tLfT9vOAS1rbt2APkhs6-105" value="gender" style="ellipse;whiteSpace=wrap;html=1;align=center;fontSize=18;fontColor=#1D3557;fontStyle=1;rounded=0;fillColor=#A8DADC;strokeColor=#457B9D;" parent="1" vertex="1">
           <mxGeometry x="180" y="235" width="100" height="40" as="geometry" />
@@ -384,6 +381,9 @@
         </mxCell>
         <mxCell id="tLfT9vOAS1rbt2APkhs6-187" value="&lt;span style=&quot;border-bottom: 1px dotted&quot;&gt;name&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontColor=#1D3557;fontStyle=1;rounded=0;fillColor=#A8DADC;strokeColor=#457B9D;" parent="1" vertex="1">
           <mxGeometry x="-120" y="285" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YR1HF5GOMcGi3SUSlhOe-3" value="password" style="ellipse;whiteSpace=wrap;html=1;align=center;fontSize=18;fontColor=#1D3557;fontStyle=1;rounded=0;fillColor=#A8DADC;strokeColor=#457B9D;" vertex="1" parent="1">
+          <mxGeometry x="970" y="430" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
