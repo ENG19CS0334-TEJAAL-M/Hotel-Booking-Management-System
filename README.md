@@ -1,2 +1,4 @@
-# DBMS
-I would like to share my dbms files that I had tried implementing using few basic commands.
+# Hotel Booking Management System
+### Helps the customers to book rooms and check for availability.
+### Tech Stack -Java Swing,SQL
+
